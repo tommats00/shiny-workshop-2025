@@ -3,9 +3,17 @@ library(shiny)
 library(palmerpenguins)
 library(tidyverse)
 library(DT)
+library(bslib)
 
 # user interface ----
 ui <- fluidPage( # makes it a responsive webpage, adapts to shrinking webpage
+  
+  theme = bs_theme(
+                   bg = "#A36F6F",
+                   fg = "#FDF7F7",
+                   primary = "#483132",
+                   base_font = font_google("Pacifico")
+                   ),
   
   # app title ----
   tags$h1("My App Title"),
